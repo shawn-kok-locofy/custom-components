@@ -1,0 +1,26 @@
+.input {
+  border: 0;
+  background-color: transparent;
+  height: 48px;
+  flex: 1;
+  font-family: var(--font-poppins);
+  font-weight: 300;
+  font-size: 14px;
+  color: #c4c4c4;
+  min-width: 260px;
+}
+.root {
+  width: 100%;
+  height: 176px;
+  position: relative;
+  background-color: #fff;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 30px 39px 98px;
+  box-sizing: border-box;
+  line-height: normal;
+  letter-spacing: normal;
+}

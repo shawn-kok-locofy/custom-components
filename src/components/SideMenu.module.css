@@ -1,0 +1,18 @@
+.sidemenu {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 24px;
+  min-width: 180px;
+  max-width: 215px;
+}
+
+@media only screen and (max-width: 700px) {
+  .sidemenu {
+    max-width: 40px !important;
+    min-width: 40px !important;
+    overflow: visible;
+  }
+}

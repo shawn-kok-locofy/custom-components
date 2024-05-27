@@ -1,0 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
+body {
+  margin: 0;
+  line-height: normal;
+  background: linear-gradient(180deg, #1e285f, #131314);
+}

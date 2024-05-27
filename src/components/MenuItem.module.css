@@ -1,0 +1,108 @@
+.text {
+  flex: 1;
+  position: relative;
+}
+.iconbadge {
+  width: 40px;
+  position: relative;
+  border-radius: 40px;
+  height: 40px;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.BusinessInformation {
+  background-image: url(/public/BusinessInformation.svg);
+}
+.BusinessInformationInActive {
+  background-image: url(/public/BusinessInformationInactive.svg);
+}
+.BusinessNames {
+  background-image: url(/public/BusinessNames.svg);
+}
+.BusinessNamesInActive {
+  background-image: url(/public/BusinessNamesInactive.svg);
+}
+.BusinessOwners {
+  background-image: url(/public/BusinessOwners.svg);
+}
+.BusinessOwnersInActive {
+  background-image: url(/public/BusinessOwnersInactive.svg);
+}
+.EINVerification {
+  background-image: url(/public/EINVerification.svg);
+}
+.EINVerificationInActive {
+  background-image: url(/public/EINVerificationInactive.svg);
+}
+.FormationDocuments {
+  background-image: url(/public/FormationDocuments.svg);
+}
+.FormationDocumentsInActive {
+  background-image: url(/public/FormationDocumentsInactive.svg);
+}
+.PersonalVerification {
+  background-image: url(/public/PersonalVerification.svg);
+}
+.PersonalVerificationInActive {
+  background-image: url(/public/PersonalVerificationInactive.svg);
+}
+.PersonalInformation {
+  background-image: url(/public/PersonalInformation.svg);
+}
+.PersonalInformationInActive {
+  background-image: url(/public/PersonalInformationInactive.svg);
+}
+.menuitem {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  text-align: right;
+  font-size: 12px;
+  color: #f3e0b5;
+  font-family: Poppins;
+  height: 50px;
+}
+
+@media only screen and (max-width: 700px) {
+
+  .text {
+    box-sizing: border-box;
+    display: block; /* Ensure it is in the document flow */
+    opacity: 0;
+    visibility: hidden;
+    max-width: 0;
+    overflow: hidden;
+    transition: max-width 0.2s ease-in-out, visibility 0.3s ease-in-out;
+  }
+
+  .menuitem {
+    gap: 0;
+    box-sizing: border-box;
+  }
+
+  .menuitem:hover {
+    min-width: 215px;
+    justify-content: start;
+    flex-direction: row-reverse;
+    gap: 16px;
+  }
+  
+  .menuitem:hover .text {
+    display: block;
+    opacity: 1;
+    flex: none;
+  }
+  .menuitem:hover .text {
+    opacity: 1;
+    visibility: visible;
+    max-width: 200px;
+    background-color: #414141;;
+    padding: 10px;
+    border-radius: 4px;
+    z-index: 999;
+  }
+}
