@@ -12,8 +12,6 @@
 .env.test.local
 .env.production.local
 
-*.config.json
-
 
 # Logs
 npm-debug.log*
