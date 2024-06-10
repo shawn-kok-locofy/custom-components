@@ -13,9 +13,9 @@ const Input: FC<InputProps> = ({ text = "Input" }) => {
       placeholder={text}
       variant="outlined"
       sx={{
-        "& fieldset": { borderColor: "#bdbdbd" },
+        "& fieldset": { borderColor: "#383838" },
         "& .MuiInputBase-root": { height: "48px", fontSize: "14px", flex: 1 },
-        "& .MuiInputBase-input": { color: "#c4c4c4" },
+        "& .MuiInputBase-input": { color: "#383838" },
         "&:hover fieldset": {
           borderColor: "#1976d2" + "!important",
         },

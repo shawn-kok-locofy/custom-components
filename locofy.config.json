@@ -1,0 +1,11 @@
+{
+  "components": [
+    "./src/components/FileUpload.tsx",
+    "./src/components/SideMenu.tsx",
+    "./src/components/Toggle.tsx",
+    "./src/components/Input.tsx",
+    "./src/components/Select.tsx"
+  ],
+  "projectId": "6666c828a6ff6588eb9a490e",
+  "projectName": "LocofyProductDemo"
+}

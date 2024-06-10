@@ -66,9 +66,10 @@ function App() {
                 display: "flex",
                 flexDirection: "row",
                 gap: "30px",
+                backgroundColor: "#ffffff"
               }}
             >
-              <SideMenu activeTab={0} />
+              <SideMenu activeTab={5} />
               <Toggle />
               <Input text="Place Holder" />
               <Select text="Choose your option" />

@@ -1,6 +1,7 @@
 .text {
   flex: 1;
   position: relative;
+  color: "#3A3A3A"
 }
 .iconbadge {
   width: 40px;
@@ -62,7 +63,7 @@
   gap: 16px;
   text-align: right;
   font-size: 12px;
-  color: #f3e0b5;
+  color: #E8AB64;
   font-family: Poppins;
   height: 50px;
 }
@@ -76,7 +77,7 @@
     visibility: hidden;
     max-width: 0;
     overflow: hidden;
-    transition: max-width 0.2s ease-in-out, visibility 0.3s ease-in-out;
+    transition: max-width 0s ease-in-out, visibility 0.3s ease-in-out;
   }
 
   .menuitem {
@@ -88,7 +89,7 @@
     min-width: 215px;
     justify-content: start;
     flex-direction: row-reverse;
-    gap: 16px;
+    gap: 8px;
   }
   
   .menuitem:hover .text {
@@ -100,7 +101,8 @@
     opacity: 1;
     visibility: visible;
     max-width: 200px;
-    background-color: #414141;;
+    background-color: #f9f9f9;
+    color: "#fff";
     padding: 10px;
     border-radius: 4px;
     z-index: 999;

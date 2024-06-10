@@ -42,14 +42,14 @@ const DatePicker = ({ placeholder = "Date" }: Props) => {
             sx: {
               flex: 1,
               display: "inline-flex",
-              "& fieldset": { borderColor: "#d9d9d9" },
+              "& fieldset": { borderColor: "#383838" },
               "&:hover fieldset": { borderColor: "#1976d2 !important" },
               "& .MuiInputBase-root": {
                 height: 48,
                 flex: 1,
               },
               "& .MuiInputBase-input": {
-                color: "#c4c4c4",
+                color: "#383838",
                 fontSize: 14,
                 fontStyle: "normal",
                 lineHeight: 24,

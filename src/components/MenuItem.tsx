@@ -26,7 +26,7 @@ const MenuItem: FunctionComponent<MenuItemType> = ({
     <div className={[styles.menuitem, className].join(" ")}>
         <div
           className={styles.text}
-          style={{ color: status === "incomplete" ? "#dbdbdb" : "#f3e0b5" }}
+          style={{ color: status === "incomplete" ? "#3A3A3A" : "#E8AB64" }}
         >
           {text}
         </div>

@@ -36,9 +36,9 @@ const Select: FC<SelectProps> = ({ text = "Select" }) => {
         minWidth: "260px",
         display: "inline-flex",
         "& .MuiInputBase-root": { height: "48px", fontSize: "14px" },
-        "& .MuiInputBase-input": { color: "#c4c4c4" },
+        "& .MuiInputBase-input": { color: "#383838" },
         fieldset: {
-          borderColor: "#c4c4c4",
+          borderColor: "#383838",
         },
         ":hover fieldset": {
           borderColor: "#1976d2 !important",
