@@ -257,4 +257,7 @@
   .engParent {
     display: none;
   }
+  .searchIconButtonParent {
+    border-left: unset;
+  }
 }
