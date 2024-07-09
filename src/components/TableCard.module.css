@@ -1,0 +1,74 @@
+.icontransfer {
+  width: 37px;
+  position: relative;
+  height: 37px;
+}
+.subTitle,
+.title {
+  align-self: stretch;
+  position: relative;
+  line-height: 130%;
+}
+.subTitle {
+  font-size: 14px;
+  color: #a6a6a6;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.content,
+.leftSide {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+}
+.content {
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 10px 0 0;
+  gap: 1px;
+}
+.leftSide {
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 14px;
+}
+.amount,
+.date {
+  position: relative;
+  line-height: 130%;
+}
+.amount {
+  align-self: stretch;
+  font-weight: 600;
+}
+.date {
+  font-size: 14px;
+  color: #a6a6a6;
+}
+.rightSide,
+.tablecard {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 1px;
+  text-align: right;
+}
+.tablecard {
+  align-self: stretch;
+  border-radius: 12px;
+  background-color: #fff;
+  border: 1px solid #e8eae9;
+  box-sizing: border-box;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 16px 16px 14px;
+  gap: 10px;
+  min-width: 440px;
+  text-align: left;
+  font-size: 16px;
+  color: #373737;
+  font-family: "SF Pro Display";
+}

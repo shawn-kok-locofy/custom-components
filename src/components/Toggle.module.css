@@ -15,8 +15,7 @@
     align-items: center;
     gap: 10px;
     border-radius: 6px;
-    background: #373C43;
-    color: #FFFFFF;
+    color: #373737;
     text-align: center;
     font-family: Poppins;
     font-size: 14px;
@@ -24,6 +23,7 @@
     font-weight: 500;
     line-height: normal;
     cursor: pointer;
+    border: 1px solid #00E377;
 }
 
 .selected {
@@ -35,8 +35,8 @@
     align-items: center;
     gap: 10px;
     border-radius: 6px;
-    background: #E8AB64;
-    color: #FFFFFF;
+    background: linear-gradient(94deg, #00E377 -21.66%, #00C7EE 153.67%);
+    color: #373737;
     text-align: center;
     font-family: Poppins;
     font-size: 14px;

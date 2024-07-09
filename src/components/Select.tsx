@@ -40,9 +40,19 @@ const Select: FC<SelectProps> = ({ text = "Select" }) => {
         fieldset: {
           borderColor: "#383838",
         },
-        ":hover fieldset": {
-          borderColor: "#1976d2 !important",
+        "&:hover fieldset": {
+          borderColor: "#00E377" + "!important",
         },
+        "&.MuiOutlinedInput-notchedOutline": {
+          borderColor: "#00E377" + "!important",
+        },
+        "&:active fieldset": {
+          borderColor: "#00E377" + "!important",
+        },
+        "outline": "#00E377",
+        "&.Mui-focused fieldset": {
+          borderColor: "#00E377" + "!important",
+        }
       }}
     >
       {options.map((option) => (

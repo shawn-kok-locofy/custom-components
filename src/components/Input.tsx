@@ -17,7 +17,19 @@ const Input: FC<InputProps> = ({ text = "Input" }) => {
         "& .MuiInputBase-root": { height: "48px", fontSize: "14px", flex: 1 },
         "& .MuiInputBase-input": { color: "#383838" },
         "&:hover fieldset": {
-          borderColor: "#1976d2" + "!important",
+          borderColor: "#00E377" + "!important",
+        },
+        "&.MuiOutlinedInput-notchedOutline": {
+          borderColor: "#00E377" + "!important",
+        },
+        "&:active fieldset": {
+          borderColor: "#00E377" + "!important",
+        },
+        "outline": "#00E377",
+        "& .MuiOutlinedInput-root": {
+          "&.Mui-focused fieldset": {
+            borderColor: "#00E377" + "!important",
+          }
         },
         minWidth: "260px"
       }}

@@ -31,7 +31,7 @@
 .stateupload {
   align-self: stretch;
   border-radius: 8px;
-  background-color: #373c43;
+  border: 1px solid #00E377;
   overflow: hidden;
   display: flex;
   flex-direction: row;
@@ -60,11 +60,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 10px;
   gap: 10px;
   text-align: left;
   font-size: 16px;
-  color: #fff;
+  color: #373737;
   font-family: Poppins;
 }
 .delete {
