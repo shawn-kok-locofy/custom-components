@@ -88,7 +88,7 @@ function App() {
                 date="Aug 16, 2023, 4:30 PM"
                 icon="/icontransfer.svg"
               />
-              <Avatar isBusinessAccount userName="Siddharth Srivastava"/>
+              <Avatar isBusinessAccount userName="Siddharth Srivastava Is the Boss"/>
               <FileUpload text="Enter the File"/>
               <SideMenu activeTab={5} />
               <Toggle />
