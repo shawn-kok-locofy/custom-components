@@ -5,12 +5,14 @@ export type FrameComponentType = {
   className?: string;
   userName?: string;
   isBusinessAccount?: boolean;
+  avatarImage?: string;
 };
 
 const Avatar: FunctionComponent<FrameComponentType> = ({
   className = "",
   userName = "Joseph\nYoh",
-  isBusinessAccount = false
+  isBusinessAccount = false,
+  avatarImage = "/avatar-image@2x.png"
 }) => {
   return (
     <div className={[styles.frameParent, className].join(" ")}>
@@ -18,7 +20,7 @@ const Avatar: FunctionComponent<FrameComponentType> = ({
         <img
           className={styles.avatarImageIcon}
           alt=""
-          src="/avatar-image@2x.png"
+          src={avatarImage}
         />
         {isBusinessAccount ?
           <div className={styles.badge}>
