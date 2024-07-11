@@ -1,0 +1,16 @@
+{
+  "components": [
+    "./src/components/FileUpload.tsx",
+    "./src/components/SideMenu.tsx",
+    "./src/components/Toggle.tsx",
+    "./src/components/Input.tsx",
+    "./src/components/Select.tsx",
+    "./src/components/Avatar.tsx",
+    "./src/components/AccountCard.tsx",
+    "./src/components/BankingCard.tsx",
+    "./src/components/Header.tsx",
+    "./src/components/TableCard.tsx"
+  ],
+  "projectId": "668e04d80aa71515e7c2a074",
+  "projectName": "LocofyProductDemo"
+}
