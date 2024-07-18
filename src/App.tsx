@@ -18,6 +18,7 @@ import TableCard from "./components/TableCard";
 import AccountCard from "./components/AccountCard";
 import CustomPieChart from "./components/CustomPieChart";
 import CustomLineChart from "./components/CustomLineChart";
+import styles from "./temp.module.css";
 
 function App() {
   const action = useNavigationType();
@@ -93,7 +94,10 @@ function App() {
               <Toggle />
               <Input text="Place Holder" />
               <Select text="Choose your option" />
-              <CustomPieChart expenditure="4500"/>
+              <div className={styles.reportCharts}>
+                <CustomLineChart />
+                <CustomPieChart expenditure="4500"/>
+              </div>
             </div>
           </>
         }
