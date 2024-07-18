@@ -13,24 +13,5 @@
   font-size: 18px;
   color: #a6a6a6;
   font-family: Inter;
-  min-width: 385px;
-}
-.expenditure {
-  position: relative;
-  font-size: 26px;
-  line-height: 100%;
-  font-weight: 500;
-  font-family: Inter;
-  color: #373737;
-  text-align: left;
-  }
-@media screen and (max-width: 450px) {
-  .expenditure {
-    font-size: 21px;
-    line-height: 21px;
-  }
-  .pieChart {
-    gap: 25px;
-    max-width: 100%;
-  }
+  min-width: 350px;
 }
