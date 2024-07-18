@@ -1,0 +1,35 @@
+.pieChart {
+  border-radius: 11px;
+  background-color: #fff;
+  border: 1px solid #e8eae9;
+  box-sizing: border-box;
+  width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  flex-direction: column;
+  padding: 30px;
+  gap: 50px;
+  max-width: 385px;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+}
+.expenditure {
+  position: relative;
+  font-size: 26px;
+  line-height: 100%;
+  font-weight: 500;
+  font-family: Inter;
+  color: #373737;
+  text-align: left;
+  }
+@media screen and (max-width: 450px) {
+  .expenditure {
+    font-size: 21px;
+    line-height: 21px;
+  }
+  .pieChart {
+    gap: 25px;
+    max-width: 100%;
+  }
+}

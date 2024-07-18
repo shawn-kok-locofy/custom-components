@@ -8,17 +8,16 @@ import {
 
 import FileUpload from "./components/FileUpload";
 import SideMenu from "./components/SideMenu";
-import MuiInput from "./components/Input";
 import Input from "./components/Input";
 import Toggle from "./components/Toggle";
 import Select from "./components/Select";
-import DatePicker from "./components/DatePicker";
-import TextArea from "./components/TextArea";
 import Avatar from "./components/Avatar";
 import Header from "./components/Header";
 import BankingCard from "./components/BankingCard";
 import TableCard from "./components/TableCard";
 import AccountCard from "./components/AccountCard";
+import CustomPieChart from "./components/CustomPieChart";
+import CustomLineChart from "./components/CustomLineChart";
 
 function App() {
   const action = useNavigationType();
@@ -94,6 +93,7 @@ function App() {
               <Toggle />
               <Input text="Place Holder" />
               <Select text="Choose your option" />
+              <CustomPieChart expenditure="4500"/>
             </div>
           </>
         }
