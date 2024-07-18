@@ -71,17 +71,18 @@ option = {
 };
 
 export type CustomPieChartType = {
-    className?: string;
     expenditure?: string;
   };
 
   
-const CustomPieChart: FunctionComponent<CustomPieChartType> = ({ className = "", expenditure="4,500.30" }) => {
+const CustomPieChart: FunctionComponent<CustomPieChartType> = ({ expenditure="4,500.30" }) => {
 
 return (
-  <div className={[styles.pieChart, className].join(" ")} >
+  <div className={styles.pieChart} >
     <div className={styles.expenditure}>{"$" + expenditure}</div>
-    <ReactEcharts option={option} />
+    <div className={styles.innerPieChart}>
+      <ReactEcharts option={option} />
+    </div>
   </div>
 );
 };
