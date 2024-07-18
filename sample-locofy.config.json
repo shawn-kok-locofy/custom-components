@@ -9,7 +9,9 @@
     "./src/components/AccountCard.tsx",
     "./src/components/BankingCard.tsx",
     "./src/components/Header.tsx",
-    "./src/components/TableCard.tsx"
+    "./src/components/TableCard.tsx",
+    "./src/components/CustomPieChart.tsx",
+    "./src/components/CustomLineChart.tsx"
   ],
   "projectId": "6666ddfea6ff6588eb9a4fd8",
   "projectName": "LocofyDemo"
