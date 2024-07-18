@@ -10,7 +10,7 @@
     "./src/components/BankingCard.tsx",
     "./src/components/Header.tsx",
     "./src/components/TableCard.tsx",
-    "./src/components/CustomPieChart.tsx"
+    "./src/components/CustomPieChart.tsx",
     "./src/components/CustomLineChart.tsx"
   ],
   "projectId": "6698de9cbf860bab54def311",
