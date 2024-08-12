@@ -16,7 +16,7 @@ const TableCard: FunctionComponent<TableCardType> = ({
   subTitle = "Transfer",
   amount = "$0.00",
   date = "Jan 01, 2023, 12:00 AM",
-  icon = "37x37x2077741162",
+  icon = "/icontransfer.svg",
 }) => {
   return (
     <div className={[styles.tablecard, className].join(" ")}>
