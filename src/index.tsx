@@ -11,7 +11,7 @@ const root = createRoot(container!);
 
 root.render(
   <BrowserRouter>
-    <FluentProvider theme={webLightTheme}>
+    <FluentProvider theme={webLightTheme} style={{display: "contents"}}>
       <App />
     </FluentProvider>
   </BrowserRouter>

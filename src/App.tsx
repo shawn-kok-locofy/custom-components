@@ -94,7 +94,7 @@ function App() {
               />
               <Avatar
                 isBusinessAccount
-                userName="Siddharth Srivastava Is the Boss"
+                userName="Siddharth Srivastava"
               />
               <FileUpload text="Enter the File" />
               <SideMenu activeTab={5} />
