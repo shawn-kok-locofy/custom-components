@@ -10,7 +10,7 @@ type DatePickerProps = {
 
 const DatePicker: FC<DatePickerProps> = ({
   placeholder = "Select date",
-  size = "medium",
+  size = "large",
   appearance = "outline",
 }) => {
   return (
@@ -18,7 +18,6 @@ const DatePicker: FC<DatePickerProps> = ({
       <FluentDatePicker
         placeholder={placeholder}
         size={size}
-        clearable
         appearance={appearance}
         style={{ flex: 1, minWidth: "260px", height: "38px" }}
       />

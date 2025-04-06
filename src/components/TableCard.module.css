@@ -1,7 +1,7 @@
 .icontransfer {
-  width: 37px;
+  width: 36px;
   position: relative;
-  height: 37px;
+  height: 36px;
 }
 .subTitle,
 .title {
@@ -39,7 +39,6 @@
   line-height: 130%;
 }
 .amount {
-  align-self: stretch;
   font-weight: 600;
 }
 .date {
@@ -67,7 +66,6 @@
   justify-content: flex-start;
   padding: 16px 16px 14px;
   gap: 10px;
-  min-width: 440px;
   text-align: left;
   font-size: 16px;
   color: #373737;
@@ -77,4 +75,15 @@
 
 .tablecard:hover {
   border: 1px solid #0F6CBD;
+}
+
+@media only screen and (max-width: 640px) {
+  .tablecard {
+    flex-direction: column;
+  }
+
+  .rightSide {
+    align-items: flex-start;
+    padding-left: 50px;
+  }
 }

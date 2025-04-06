@@ -10,7 +10,7 @@ type DropdownProps = {
 };
 
 const Dropdown: FC<DropdownProps> = ({
-  placeholder = "Select Date",
+  placeholder = "Select Dropdown Value",
   size = "medium",
   appearance = "outline",
   options = [

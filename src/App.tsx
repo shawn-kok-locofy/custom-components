@@ -20,6 +20,8 @@ import CustomPieChart from "./components/CustomPieChart";
 import CustomLineChart from "./components/CustomLineChart";
 import styles from "./temp.module.css";
 import DatePicker from "./components/DatePicker";
+import Button from "./components/Button";
+import PaymentCard from "./components/PaymentCard";
 
 function App() {
   const action = useNavigationType();
@@ -138,6 +140,8 @@ function App() {
                 <CustomLineChart />
                 <CustomPieChart expenditure="$4,500.30" />
               </div>
+              <Button label="Continue" size="large" appearance="primary"/>
+              <PaymentCard label="Button" size="large" appearance="primary" icon="/icontransfer.svg"/>
             </div>
           </>
         }

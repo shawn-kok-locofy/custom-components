@@ -28,3 +28,22 @@
   gap: 16px 14px;
   max-width: 100%;
 }
+
+.button {
+  width: auto;
+}
+
+.filledButton {
+  cursor: pointer;
+  border: none;
+  padding: 16px 30px;
+  background-color: transparent;
+  border-radius: 4px;
+  background: linear-gradient(93.87deg, #00e377, #00c7ee);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  white-space: nowrap;
+}

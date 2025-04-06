@@ -2,7 +2,6 @@ import { FunctionComponent } from "react";
 import styles from "./TableCard.module.css";
 
 export type TableCardType = {
-  className?: string;
   title?: string;
   subTitle?: string;
   amount?: string;
@@ -11,7 +10,6 @@ export type TableCardType = {
 };
 
 const TableCard: FunctionComponent<TableCardType> = ({
-  className = "",
   title = "Fund Transfer",
   subTitle = "Transfer",
   amount = "$0.00",
@@ -19,7 +17,7 @@ const TableCard: FunctionComponent<TableCardType> = ({
   icon = "/icontransfer.svg",
 }) => {
   return (
-    <div className={[styles.tablecard, className].join(" ")}>
+    <div className={styles.tablecard}>
       <div className={styles.leftSide}>
         <img className={styles.icontransfer} alt="" src={icon} />
         <div className={styles.content}>
