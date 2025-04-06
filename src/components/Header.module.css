@@ -8,13 +8,7 @@
   display: flex;
   height: auto;
 }
-.image1Icon:hover {
-  display: flex;
-  width: 140.8px;
-  align-self: stretch;
-  height: auto;
-  min-height: 36;
-}
+
 .needAnyHelp {
   text-decoration: none;
   position: relative;
@@ -22,14 +16,7 @@
   display: flex;
   min-width: 103;
 }
-.needAnyHelp:hover {
-  font-family: Inter;
-  font-size: 14px;
-  text-align: left;
-  color: #00e377;
-  display: flex;
-  min-width: 103;
-}
+
 .iconamoonsearch {
   height: 20px;
   width: 20px;
@@ -39,12 +26,7 @@
   min-height: 20;
   display: flex;
 }
-.iconamoonsearch:hover {
-  display: flex;
-  width: 20px;
-  height: 20px;
-  min-height: 20;
-}
+
 .searchIconButton {
   display: flex;
   flex-direction: row;
@@ -55,16 +37,7 @@
   align-self: unset;
   height: auto;
 }
-.searchIconButton:hover {
-  display: flex;
-  width: auto;
-  align-self: unset;
-  height: auto;
-  flex-direction: row;
-  gap: 12px;
-  align-items: center;
-  justify-content: flex-start;
-}
+
 .avatarIcon {
   height: 36px;
   width: 36px;
@@ -74,12 +47,7 @@
   background-color: #d9d9d9;
   display: flex;
 }
-.avatarIcon:hover {
-  background-color: #d9d9d9;
-  display: flex;
-  width: 36px;
-  height: 36px;
-}
+
 .searchIconButtonParent {
   border-left: 1px solid #525457;
   box-sizing: border-box;
@@ -93,18 +61,7 @@
   align-self: unset;
   height: auto;
 }
-.searchIconButtonParent:hover {
-  display: flex;
-  width: auto;
-  align-self: unset;
-  height: auto;
-  flex-direction: row;
-  gap: 24px;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 0px 0px 0px 13px;
-  box-sizing: border-box;
-}
+
 .eng {
   text-decoration: none;
   position: relative;
@@ -112,14 +69,7 @@
   display: flex;
   min-width: 29;
 }
-.eng:hover {
-  font-family: "SF Pro Display";
-  font-size: 14px;
-  text-align: left;
-  color: #fff;
-  display: flex;
-  min-width: 29;
-}
+
 .frameChild {
   height: 3.3px;
   width: 6.7px;
@@ -128,13 +78,7 @@
   border: 1.5px solid #a6a6a6;
   box-sizing: border-box;
 }
-.frameChild:hover {
-  display: flex;
-  width: 6.7px;
-  height: 3.3px;
-  border: 1.5px solid #a6a6a6;
-  box-sizing: border-box;
-}
+
 .engParent {
   border-radius: 4px;
   background-color: #4a4a4a;
@@ -151,20 +95,7 @@
   color: #fff;
   font-family: "SF Pro Display";
 }
-.engParent:hover {
-  background-color: #4a4a4a;
-  display: flex;
-  width: auto;
-  align-self: unset;
-  height: auto;
-  flex-direction: row;
-  gap: 6px;
-  align-items: center;
-  justify-content: center;
-  border-radius: 4px;
-  padding: 4px 7px 4px 8px;
-  box-sizing: border-box;
-}
+
 .needAnyHelpParent {
   display: flex;
   flex-direction: row;
@@ -176,17 +107,7 @@
   align-self: unset;
   height: auto;
 }
-.needAnyHelpParent:hover {
-  display: flex;
-  width: auto;
-  align-self: unset;
-  height: auto;
-  flex-direction: row;
-  gap: 25px;
-  align-items: center;
-  justify-content: flex-start;
-  max-width: 100%;
-}
+
 .image1Parent {
   flex: 1;
   display: flex;
@@ -197,16 +118,7 @@
   gap: 20px;
   height: auto;
 }
-.image1Parent:hover {
-  display: flex;
-  flex: 1;
-  height: auto;
-  flex-direction: row;
-  gap: 20px;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 100%;
-}
+
 .header {
   width: 100%;
   background-color: #262626;
@@ -224,22 +136,10 @@
   gap: 0px;
   text-align: left;
   font-size: 14px;
-  color: #00e377;
+  color: #0F6CBD;
   font-family: Inter;
 }
-.header:hover {
-  background-color: #262626;
-  display: flex;
-  height: auto;
-  flex-direction: row;
-  gap: 0px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: 14px 80px;
-  box-sizing: border-box;
-  line-height: normal;
-  letter-spacing: normal;
-}
+
 
 @media only screen and (max-width: 1080px) {
   .header {

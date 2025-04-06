@@ -10,7 +10,7 @@ import FileUpload from "./components/FileUpload";
 import SideMenu from "./components/SideMenu";
 import Input from "./components/Input";
 import Toggle from "./components/Toggle";
-import Select from "./components/Select";
+import Dropdown from "./components/Dropdown";
 import Avatar from "./components/Avatar";
 import Header from "./components/Header";
 import BankingCard from "./components/BankingCard";
@@ -19,7 +19,7 @@ import AccountCard from "./components/AccountCard";
 import CustomPieChart from "./components/CustomPieChart";
 import CustomLineChart from "./components/CustomLineChart";
 import styles from "./temp.module.css";
-import { ChoiceGroupBasicExample } from "./components/ChoiceGroup";
+import DatePicker from "./components/DatePicker";
 
 function App() {
   const action = useNavigationType();
@@ -73,7 +73,7 @@ function App() {
                 flexDirection: "column",
                 padding: "100px",
                 gap: "30px",
-                backgroundColor: "#ffffff"
+                backgroundColor: "#ffffff",
               }}
             >
               <Header />
@@ -90,17 +90,54 @@ function App() {
                 date="Aug 16, 2023, 4:30 PM"
                 icon="/icontransfer.svg"
               />
-              <Avatar userName="Siddharth Srivastava Is the Boss"/>
-              <FileUpload text="Enter the File"/>
+              <Avatar
+                isBusinessAccount
+                userName="Siddharth Srivastava Is the Boss"
+              />
+              <FileUpload text="Enter the File" />
               <SideMenu activeTab={5} />
               <Toggle />
-              <Input text="Place Holder" />
-              <Select text="Choose your option" />
+              <div className={styles.row}>
+                <Input
+                  placeholder="First Name"
+                  size="large"
+                  appearance="outline"
+                />
+                <Input
+                  placeholder="Last Name"
+                  size="large"
+                  appearance="outline"
+                />
+              </div>
+              <div className={styles.row}>
+                <Input
+                  placeholder="Email Address"
+                  size="large"
+                  appearance="outline"
+                />
+                <Input
+                  placeholder="Phone Number"
+                  size="large"
+                  appearance="outline"
+                />
+              </div>
+              <div className={styles.row}>
+                <Dropdown
+                  placeholder="Select Nationality"
+                  size="large"
+                  appearance="outline"
+                  options={["Option 1", "Option 2", "Option 3"]}
+                />
+                <DatePicker
+                  placeholder="Select Date"
+                  size="large"
+                  appearance="outline"
+                />
+              </div>
               <div className={styles.reportCharts}>
                 <CustomLineChart />
-                <CustomPieChart expenditure="4500"/>
+                <CustomPieChart expenditure="$4,500.30" />
               </div>
-              <ChoiceGroupBasicExample />
             </div>
           </>
         }

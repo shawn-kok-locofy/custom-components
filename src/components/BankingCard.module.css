@@ -54,7 +54,7 @@
   position: relative;
   font-size: 20px;
   line-height: 100%;
-  color: #262626;
+  color: #FFFFFF;
 }
 .bankingcard {
   width: 100%;
@@ -74,6 +74,6 @@
   background-position: top;
   text-align: left;
   font-size: 16px;
-  color: #373737;
+  color: #FFFFFF;
   font-family: "SF Pro Display";
 }

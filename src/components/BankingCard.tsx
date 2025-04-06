@@ -20,7 +20,7 @@ const BankingCard: FunctionComponent<BankingCardType> = ({
         <div className={styles.content}>
           <div className={styles.cardType}>{cardType}</div>
           <div className={styles.cardNumberContainer}>
-            <img className={styles.icon} alt="" src="/icon2.svg" />
+            <img className={styles.icon} alt="" src="/icon3.svg" />
             <div className={styles.cardNumber}>{cardNumber}</div>
           </div>
         </div>

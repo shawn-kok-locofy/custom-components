@@ -1,39 +1,29 @@
 import { FC } from "react";
-import { TextField } from "@mui/material";
-import styles from "./Input.module.css";
-
+import { Input as FluentInput } from "@fluentui/react-components";
+import styles from "./Field.module.css";
 type InputProps = {
-  text: string;
+  placeholder: string;
+  size: "small" | "medium" | "large";
+  appearance: "outline" | "underline" | "filled-darker" | "filled-lighter";
 };
 
-const Input: FC<InputProps> = ({ text = "Input" }) => {
+const Input: FC<InputProps> = ({
+  placeholder = "Input",
+  appearance = "outline",
+  size = "medium",
+}) => {
   return (
-    <TextField
-      className={styles.input}
-      placeholder={text}
-      variant="outlined"
-      sx={{
-        "& fieldset": { borderColor: "#383838" },
-        "& .MuiInputBase-root": { height: "48px", fontSize: "14px", flex: 1 },
-        "& .MuiInputBase-input": { color: "#383838" },
-        "&:hover fieldset": {
-          borderColor: "#00E377" + "!important",
-        },
-        "&.MuiOutlinedInput-notchedOutline": {
-          borderColor: "#00E377" + "!important",
-        },
-        "&:active fieldset": {
-          borderColor: "#00E377" + "!important",
-        },
-        "outline": "#00E377",
-        "& .MuiOutlinedInput-root": {
-          "&.Mui-focused fieldset": {
-            borderColor: "#00E377" + "!important",
-          }
-        },
-        minWidth: "260px"
-      }}
-    />
+    <div className={styles.container}>
+      <FluentInput
+        appearance={
+          appearance === "filled-darker" ? "filled-darker-shadow" : appearance
+        }
+        size={size}
+        type="text"
+        placeholder={placeholder}
+        style={{ flex: 1, minWidth: "260px" }}
+      />
+    </div>
   );
 };
 

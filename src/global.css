@@ -1,6 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap");
 body {
   margin: 0;
   line-height: normal;
   background: linear-gradient(180deg, #1e285f, #131314);
+}
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("/public/SFPRODISPLAYREGULAR.OTF");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("/public/SFPRODISPLAYMEDIUM.OTF");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("/public/SFPRODISPLAYSEMIBOLDITALIC.OTF");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("/public/SFPRODISPLAYBOLD.OTF");
+  font-weight: 700;
 }
