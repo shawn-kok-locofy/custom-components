@@ -4,14 +4,14 @@ import styles from "./Field.module.css";
 
 type DropdownProps = {
   placeholder: string;
-  size: "small" | "medium" | "large";
+  dropdownSize: "small" | "medium" | "large";
   appearance: "outline" | "underline" | "filled-darker" | "filled-lighter";
   options: string[];
 };
 
 const Dropdown: FC<DropdownProps> = ({
   placeholder = "Select Dropdown Value",
-  size = "medium",
+  dropdownSize = "medium",
   appearance = "outline",
   options = [
     "India",
@@ -28,7 +28,7 @@ const Dropdown: FC<DropdownProps> = ({
     <div className={styles.container}>
       <FluentDropdown
         placeholder={placeholder}
-        size={size}
+        size={dropdownSize}
         appearance={appearance}
         clearable
         style={{ flex: 1, minWidth: "260px" }}

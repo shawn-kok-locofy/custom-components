@@ -7,6 +7,7 @@ type ButtonProps = {
   label: string;
   size: "small" | "medium" | "large";
   appearance: "secondary" | "primary" | "outline" | "subtle" | "transparent";
+  onClick: () => void;
 };
 
 const Button: FC<ButtonProps> = ({
@@ -14,12 +15,14 @@ const Button: FC<ButtonProps> = ({
   label = "Button",
   size = "medium",
   appearance = "primary",
+  onClick = () => {console.log("clicked")}
 }) => {
   return (
     <FluentButton
       className={[styles.button, className].join(" ")}
       size={size}
       appearance={appearance}
+      onClick={onClick}
     >
       {label}
     </FluentButton>

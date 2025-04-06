@@ -7,8 +7,8 @@ const Toggle = () => {
     const [decision, setDecision] = useState(true);
 
     return <div className={styles.container}>
-        <Button appearance={decision ? 'primary' : 'outline'} size="large" onClick={() => setDecision(!decision)}>Yes</Button>
-        <Button appearance={!decision ? 'primary' : 'outline'} size="large"onClick={() => setDecision(!decision)}>No</Button>
+        <Button appearance={decision ? 'primary' : 'outline'} size="large" onClick={() => setDecision(true)}>Yes</Button>
+        <Button appearance={!decision ? 'primary' : 'outline'} size="large"onClick={() => setDecision(false)}>No</Button>
     </div>
 }
 
