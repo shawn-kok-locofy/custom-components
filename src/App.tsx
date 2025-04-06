@@ -16,12 +16,14 @@ import Header from "./components/Header";
 import BankingCard from "./components/BankingCard";
 import TableCard from "./components/TableCard";
 import AccountCard from "./components/AccountCard";
-import CustomPieChart from "./components/CustomPieChart";
-import CustomLineChart from "./components/CustomLineChart";
+import CustomPieChart from "./components/PieChart";
+import CustomLineChart from "./components/LineChart";
 import styles from "./temp.module.css";
 import DatePicker from "./components/DatePicker";
 import Button from "./components/Button";
 import PaymentCard from "./components/PaymentCard";
+import PieChart from "./components/PieChart";
+import LineChart from "./components/LineChart";
 
 function App() {
   const action = useNavigationType();
@@ -126,7 +128,7 @@ function App() {
               <div className={styles.row}>
                 <Dropdown
                   placeholder="Select Nationality"
-                  size="large"
+                  dropdownSize="large"
                   appearance="outline"
                   options={["Option 1", "Option 2", "Option 3"]}
                 />
@@ -137,8 +139,8 @@ function App() {
                 />
               </div>
               <div className={styles.reportCharts}>
-                <CustomLineChart />
-                <CustomPieChart expenditure="$4,500.30" />
+                <LineChart />
+                <PieChart expenditure="$4,500.00" />
               </div>
               <Button label="Continue" size="large" appearance="primary"/>
               <PaymentCard label="Button" size="large" appearance="primary" icon="/icontransfer.svg"/>

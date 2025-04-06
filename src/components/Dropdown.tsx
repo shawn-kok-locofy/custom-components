@@ -31,7 +31,7 @@ const Dropdown: FC<DropdownProps> = ({
         size={dropdownSize}
         appearance={appearance}
         clearable
-        style={{ flex: 1, minWidth: "260px" }}
+        style={{ flex: 1, minWidth: "260px", height: "40px" }}
       >
         {options.map((option) => (
           <Option key={option}>{option}</Option>
