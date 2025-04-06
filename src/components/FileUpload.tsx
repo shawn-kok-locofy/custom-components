@@ -2,12 +2,10 @@ import { FunctionComponent, useRef, useState } from "react";
 import styles from "./FileUpload.module.css";
 
 export type FileUploadType = {
-  className?: string;
   text: string;
 };
 
 const FileUpload: FunctionComponent<FileUploadType> = ({
-  className = "",
   text = "File Upload",
 }) => {
   const fileInputRef: any = useRef(null);
@@ -31,7 +29,7 @@ const FileUpload: FunctionComponent<FileUploadType> = ({
   return (
     <div
       onClick={handleDivClick}
-      className={[styles.fileupload, className].join(" ")}
+      className={styles.fileupload}
     >
       <input
         type="file"
