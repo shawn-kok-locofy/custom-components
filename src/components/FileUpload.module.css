@@ -31,7 +31,7 @@
 .stateupload {
   align-self: stretch;
   border-radius: 8px;
-  border: 1px solid #00E377;
+  border: 1px solid #0F6CBD;
   overflow: hidden;
   display: flex;
   flex-direction: row;
@@ -48,11 +48,11 @@
   height: 24px;
   overflow: hidden;
   flex-shrink: 0;
+  filter: brightness(0) saturate(100%) invert(31%) sepia(74%) saturate(1348%) hue-rotate(184deg) brightness(93%) contrast(96%);
 }
 .fileupload {
-  width: 529px;
+  width: 100%;
   border-radius: 5px;
-
   box-sizing: border-box;
   max-width: 100%;
   overflow: hidden;

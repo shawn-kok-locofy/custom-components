@@ -19,6 +19,7 @@ import AccountCard from "./components/AccountCard";
 import CustomPieChart from "./components/CustomPieChart";
 import CustomLineChart from "./components/CustomLineChart";
 import styles from "./temp.module.css";
+import { ChoiceGroupBasicExample } from "./components/ChoiceGroup";
 
 function App() {
   const action = useNavigationType();
@@ -70,6 +71,7 @@ function App() {
               style={{
                 display: "flex",
                 flexDirection: "column",
+                padding: "100px",
                 gap: "30px",
                 backgroundColor: "#ffffff"
               }}
@@ -88,7 +90,7 @@ function App() {
                 date="Aug 16, 2023, 4:30 PM"
                 icon="/icontransfer.svg"
               />
-              <Avatar isBusinessAccount userName="Siddharth Srivastava Is the Boss"/>
+              <Avatar userName="Siddharth Srivastava Is the Boss"/>
               <FileUpload text="Enter the File"/>
               <SideMenu activeTab={5} />
               <Toggle />
@@ -98,6 +100,7 @@ function App() {
                 <CustomLineChart />
                 <CustomPieChart expenditure="4500"/>
               </div>
+              <ChoiceGroupBasicExample />
             </div>
           </>
         }

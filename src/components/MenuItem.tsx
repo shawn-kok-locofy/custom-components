@@ -25,8 +25,8 @@ const MenuItem: FunctionComponent<MenuItemType> = ({
   return (
     <div className={[styles.menuitem, className].join(" ")} 
          style={{
-           backgroundColor: status === "incomplete" ? "#F6F6F6" : status === "current" ? "#00E377" : '',
-           border: status === 'completed' ? '1px solid #00E377' : ''
+           backgroundColor: status === "incomplete" ? "#F6F6F6" : status === "current" ? "#0F6CBD60" : '',
+           border: status === 'completed' ? '1px solid #0F6CBD' : ''
           }}>
       <div className={`${styles.iconbadge} ${styles[imageName]}`} />
 
@@ -38,8 +38,8 @@ const MenuItem: FunctionComponent<MenuItemType> = ({
         </div>
       {
        status === 'completed' && <svg className={styles.checkIcon} xmlns="http://www.w3.org/2000/svg" width="19" height="20" viewBox="0 0 19 20" fill="none">
-       <path d="M6.03658 10.253L8.25047 12.3564L12.9632 7.64368" stroke="#00E377" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-       <circle cx="9.5" cy="10" r="8.5" stroke="#00E377" stroke-width="1.5"/>
+       <path d="M6.03658 10.253L8.25047 12.3564L12.9632 7.64368" stroke="#0F6CBD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+       <circle cx="9.5" cy="10" r="8.5" stroke="#0F6CBD" stroke-width="1.5"/>
      </svg> 
       }
     </div>

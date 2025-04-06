@@ -42,9 +42,14 @@ const FileUpload: FunctionComponent<FileUploadType> = ({
       <div className={styles.stateupload}>
         <div className={styles.container}>
           {selectedFile && (
+            <>
             <img className={styles.tickicon1} alt="" src="/tickicon.svg" />
+            <div className={styles.text}>{text} ({<span style={{color: "#0F6CBD"}}>{selectedFile?.name}</span>})</div>
+            </>
           )}
-          <div className={styles.text}>{text}</div>
+          {!selectedFile && (
+            <div className={styles.text}>{text}</div>
+          )}
         </div>
         <div
           className={`${styles.iconwrapper} ${

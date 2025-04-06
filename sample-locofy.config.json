@@ -13,6 +13,7 @@
     "./src/components/CustomPieChart.tsx",
     "./src/components/CustomLineChart.tsx"
   ],
+  "wrapper": "./src/wrapper.tsx",
   "projectId": "6666ddfea6ff6588eb9a4fd8",
   "projectName": "LocofyDemo"
 }
