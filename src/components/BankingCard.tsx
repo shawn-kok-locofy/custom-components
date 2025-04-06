@@ -1,7 +1,4 @@
 import { FunctionComponent } from "react";
-import {
-  Card
-} from "@fluentui/react-components";
 import styles from "./BankingCard.module.css";
 
 export type BankingCardType = {
@@ -18,7 +15,7 @@ const BankingCard: FunctionComponent<BankingCardType> = ({
   balance = "$0.00",
 }) => {
   return (
-    <Card className={[styles.bankingcard, className].join(" ")}>
+    <div className={[styles.bankingcard, className].join(" ")}>
       <div className={styles.topSection}>
         <div className={styles.content}>
           <div className={styles.cardType}>{cardType}</div>
@@ -30,7 +27,7 @@ const BankingCard: FunctionComponent<BankingCardType> = ({
         <img className={styles.chipIcon} alt="" src="/chip@2x.png" />
       </div>
       <b className={styles.balance}>{balance}</b>
-    </Card>
+    </div>
   );
 };
 
