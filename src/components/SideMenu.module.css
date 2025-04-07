@@ -5,15 +5,17 @@
   align-items: flex-start;
   justify-content: flex-start;
   gap: 24px;
+  position: relative;
   min-width: 180px;
   max-width: 267px;
 }
 
 @media only screen and (max-width: 700px) {
   .sidemenu {
-    max-width: 40px !important;
-    min-width: 40px !important;
+    max-width: 50px !important;
+    min-width: 50px !important;
     overflow: visible;
+    position: relative;
     z-index: 999;
   }
 }

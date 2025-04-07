@@ -25,7 +25,7 @@ const MenuItem: FunctionComponent<MenuItemType> = ({
   return (
     <div className={[styles.menuitem, className].join(" ")} 
          style={{
-           backgroundColor: status === "incomplete" ? "#F6F6F6" : status === "current" ? "#0F6CBD60" : '',
+           backgroundColor: status === "incomplete" ? "#F6F6F6" : status === "current" ? "#0F6CBD60" : '#ffffff',
            border: status === 'completed' ? '1px solid #0F6CBD' : ''
           }}>
       <div className={`${styles.iconbadge} ${styles[imageName]}`} />
