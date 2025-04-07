@@ -9,8 +9,8 @@
     "./src/components/BankingCard.tsx",
     "./src/components/Header.tsx",
     "./src/components/TableCard.tsx",
-    "./src/components/CustomPieChart.tsx",
-    "./src/components/CustomLineChart.tsx",
+    "./src/components/PieChart.tsx",
+    "./src/components/LineChart.tsx",
     "./src/components/Button.tsx",
     "./src/components/Dropdown.tsx",
     "./src/components/DatePicker.tsx"

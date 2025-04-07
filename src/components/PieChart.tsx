@@ -8,11 +8,11 @@ import {
   DataVizPalette,
 } from "@fluentui/react-charts";
 
-export type CustomPieChartType = {
+export type PieChartType = {
   expenditure?: string;
 };
 
-const CustomPieChart: FunctionComponent<CustomPieChartType> = ({
+const PieChart: FunctionComponent<PieChartType> = ({
   expenditure = "$4,500.00",
 }) => {
   const numericExpenditure = parseFloat(expenditure.replace(/[^0-9.-]+/g, ""));
@@ -74,4 +74,4 @@ const CustomPieChart: FunctionComponent<CustomPieChartType> = ({
   );
 };
 
-export default CustomPieChart;
+export default PieChart;

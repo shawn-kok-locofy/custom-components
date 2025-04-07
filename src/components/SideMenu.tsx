@@ -9,12 +9,10 @@ export type SideMenuItemsType = Array<{
 }>;
 
 export type SideMenuType = {
-  className?: string;
   activeTab?: number;
 };
 
 const SideMenu: FunctionComponent<SideMenuType> = ({
-  className = "",
   activeTab = 0,
 }) => {
   const [sideMenuItems, setSideMenuItems] = useState<SideMenuItemsType>([
@@ -51,7 +49,7 @@ const SideMenu: FunctionComponent<SideMenuType> = ({
   return (
     <SideMenuItemsContext.Provider value={{ sideMenuItems, setSideMenuItems }}>
       <>
-        <div className={[styles.sidemenu, className].join(" ")}>
+        <div className={styles.sidemenu}>
           {sideMenuItems.map((item, index) => (
             <MenuItem
               status={

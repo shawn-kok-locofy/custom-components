@@ -9,8 +9,8 @@
   flex-direction: column;
   padding: 30px;
   gap: 34px;
-  min-width: 350px;
-  max-width: 350px;
+  min-width: 385px;
+  max-width: 385px;
   line-height: normal;
   letter-spacing: normal;
   display: flex;
@@ -39,6 +39,7 @@
 
   .pieChart {
     gap: 25px;
+    min-width: 100%;
     max-width: 100%;
   }
 }
