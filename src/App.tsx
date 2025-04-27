@@ -30,6 +30,28 @@ function App() {
   const location = useLocation();
   const pathname = location.pathname;
 
+  const [password, setPassword] = useState("");
+  const [rePassword, setRePassword] = useState("");
+  const [error, setError] = useState(false);
+
+  const onChangePassword = (value: string) => {
+    setPassword(value);
+  };
+
+  const onChangeRePassword = (value: string) => {
+    setRePassword(value);
+  };
+
+  useEffect(() => {
+    if (password !== "" && rePassword !== "") {
+      if (password !== rePassword) {
+        setError(true);
+      } else {
+        setError(false);
+      }
+    }
+  }, [password, rePassword]);
+
   useEffect(() => {
     if (action !== "POP") {
       window.scrollTo(0, 0);
@@ -94,10 +116,7 @@ function App() {
                 date="Aug 16, 2023, 4:30 PM"
                 icon="/icontransfer.svg"
               />
-              <Avatar
-                isBusinessAccount
-                userName="Siddharth Srivastava"
-              />
+              <Avatar isBusinessAccount userName="Siddharth Srivastava" />
               <FileUpload text="Enter the File" />
               <SideMenu activeTab={5} />
               <Toggle />
@@ -111,6 +130,24 @@ function App() {
                   placeholder="Last Name"
                   size="large"
                   appearance="outline"
+                />
+              </div>
+              <div className={styles.row}>
+                <Input
+                  placeholder="Enter Password"
+                  size="large"
+                  appearance="outline"
+                  type="password"
+                  isError={error}
+                  onChange={onChangePassword}
+                />
+                <Input
+                  placeholder="Re-enter Password"
+                  size="large"
+                  appearance="outline"
+                  type="password"
+                  isError={error}
+                  onChange={onChangeRePassword}
                 />
               </div>
               <div className={styles.row}>
@@ -142,8 +179,13 @@ function App() {
                 <LineChart />
                 <PieChart expenditure="$4,500.00" />
               </div>
-              <Button label="Continue" size="large" appearance="primary"/>
-              <PaymentCard label="Button" size="large" appearance="primary" icon="/icontransfer.svg"/>
+              <Button label="Continue" size="large" appearance="primary" />
+              <PaymentCard
+                label="Button"
+                size="large"
+                appearance="primary"
+                icon="/icontransfer.svg"
+              />
             </div>
           </>
         }
