@@ -15,6 +15,7 @@
     "./src/components/Dropdown.tsx",
     "./src/components/DatePicker.tsx"
   ],
+
   "wrapper": "./src/wrapper.tsx",
   "projectId": "6666ddfea6ff6588eb9a4fd8",
   "projectName": "LocofyDemo"
