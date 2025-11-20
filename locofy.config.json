@@ -4,7 +4,6 @@
     "./src/components/SideMenu.tsx",
     "./src/components/Toggle.tsx",
     "./src/components/Input.tsx",
-    "./src/components/Avatar.tsx",
     "./src/components/AccountCard.tsx",
     "./src/components/BankingCard.tsx",
     "./src/components/Header.tsx",
